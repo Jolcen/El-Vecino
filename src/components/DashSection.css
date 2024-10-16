@@ -1,0 +1,23 @@
+.section{
+    height: 4.3rem;
+    background-color: var(--secondary-color);
+    color: var(--contrast-color);
+    display: flex;
+    font-size: 1.4rem;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.info{
+    padding: 0px;
+}
+.info span{
+    padding-left: 10px;
+}
+
+.back{
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+}

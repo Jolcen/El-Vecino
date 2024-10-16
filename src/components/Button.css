@@ -1,0 +1,19 @@
+.button{
+    width: 14rem;
+    height: 2rem;
+}
+
+.button button{
+    width: 100%;
+    height: 100%;
+    font-weight: 700;
+    color: var(--contrast-color);
+    background: var(--secondary-color);
+    border: none;
+}
+
+.button button:hover{
+    background: var(--contrast-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
