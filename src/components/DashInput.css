@@ -1,0 +1,24 @@
+.dashinput{
+    display: flex;
+    padding: 1rem 2rem;
+    width: 100%;
+    align-items: center;
+}
+
+.dashinput span{
+    padding-right: 1.5rem;
+    font-size: 1.2rem;
+    width: 12rem;
+}
+
+.dashinput input{
+    border: none;
+    padding: 6px;
+    width: 16rem;
+}
+
+@media screen and (max-width: 800px){
+    .dashinput span{
+        width: 8rem;
+    }
+}

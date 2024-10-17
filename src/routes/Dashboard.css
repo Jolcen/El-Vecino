@@ -8,11 +8,17 @@
 }
 
 .sections{
-    background-color: #fff;
+    background-color: var(--secondary-light-color);
     flex-grow: 1;
+    overflow-y: auto;
 }
 
 .content{
-    background-color: var(--secondary-dark-color);
+    background-color: var(--primary-color);
     flex-grow: 8;
+    overflow-y: auto;
+}
+
+@media screen and (max-witdh: 800px) {
+    
 }

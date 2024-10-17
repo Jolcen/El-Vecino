@@ -1,0 +1,7 @@
+.dashtitle{
+    background-color: var(--secondary-color);
+    padding-left: 2rem;
+    height: 6.5rem;
+    align-content: center;
+    color: var(--contrast-color);
+}

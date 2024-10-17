@@ -1,6 +1,6 @@
 .dash-user{
     display: flex;
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-light-color);
     color: var(--contrast-color);
     height: 6.5rem;
     padding: 10px;
@@ -19,10 +19,15 @@
     bottom: 5px;
 }
 
+.user-data{
+    padding-left: 8px;
+    margin-top: 10px;
+}
+
 .user-data h3,h4{
     padding: 2px 0;
     margin: 0;
-    margin-top: 10px;
+    margin-top: 2px;
     width: object-fit;
     width: none;
 }

@@ -1,0 +1,17 @@
+.listitemaction{
+    display: flex;
+    gap: 10px;
+}
+
+.listitemaction a:nth-child(2){
+    color: red;
+}
+
+.listitemaction a:first-child{
+    color: blue;
+}
+@media screen and(max-width: 800px) {
+    .listitemaction{
+        flex-direction: column;
+    }
+}

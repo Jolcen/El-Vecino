@@ -1,6 +1,7 @@
 .button{
     width: 14rem;
     height: 2rem;
+    margin: auto;
 }
 
 .button button{

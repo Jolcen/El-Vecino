@@ -1,0 +1,17 @@
+.item{
+    height: 4.3rem;
+    background-color: var(--secondary-light-color);
+    color: var(--contrast-color);
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.info{
+    padding: 0px;
+}
+.info span{
+    padding-left: 10px;
+}

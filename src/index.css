@@ -3,8 +3,9 @@
   margin: 0;
 
   --primary-color: #dc9;
-  --secondary-color: #f55f;
-  --secondary-dark-color: #f55a;
+  --secondary-color: #f55;
+  --secondary-dark-color: color-mix(in srgb, #f55 90%, #000 );
+  --secondary-light-color: color-mix(in srgb, #f55 65%, #fff 20%);
   --third-color: #ddd;
   --contrast-color: #fff;
   --text-color: #333;
