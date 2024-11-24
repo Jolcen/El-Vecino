@@ -4,12 +4,14 @@
     padding: 2px 0;
     width: 14rem;
     height: 2rem;
+    
 }
 
 .input-access span{
     background-color: var(--secondary-color);
     color: var(--contrast-color);;
     padding: 3px;
+    border-radius: 6px 0 0 6px;
 }
 
 .input-access input{
@@ -17,4 +19,6 @@
     border: none;
     height: 28px;
     width: 100%;
+    outline: none;
+    border-radius: 0 6px 6px 0;
 }

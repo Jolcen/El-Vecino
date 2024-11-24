@@ -1,9 +1,9 @@
 import './Button.css'
 
-const Button = ({namebutton}) => {
+const Button = ({namebutton, funtion}) => {
   return (
     <div className='button'>
-        <button>{namebutton}</button>
+        <button onClick={funtion}>{namebutton}</button>
     </div>
   )
 }

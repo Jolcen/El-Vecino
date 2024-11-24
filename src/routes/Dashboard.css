@@ -1,16 +1,27 @@
 .dashboard{
     width: 100dvw;
     height: 100dvh;
-    background-color: #000;
     display: flex;
     flex-flow: row;
-
 }
 
 .sections{
     background-color: var(--secondary-light-color);
     flex-grow: 1;
-    overflow-y: auto;
+    overflow-y: scroll;
+}
+
+/*scroll*/
+
+.sections::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.sections::-webkit-scrollbar-thumb {
+    background: #f15a59;
+    border-radius: 5px; 
+    border: 2px solid #f4f4f4; 
 }
 
 .content{
@@ -19,6 +30,22 @@
     overflow-y: auto;
 }
 
-@media screen and (max-witdh: 800px) {
-    
+.dashtitle{
+    margin: 0;
+    background-color: var(--secondary-color);
+    padding-left: 2rem;
+    height: 6.5rem;
+    align-content: center;
+    color: var(--contrast-color);
+}
+
+.dash-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #f15a59;
+    background-color: #fff;
 }
