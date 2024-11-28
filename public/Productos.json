@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "nombre": "Leche Pil",
+        "imagen": "../../public/static/image/leche-pil.jpg",
+        "precio": 10,
+        "puntos": 11
+    },
+    {
+        "id": 2,
+        "nombre": "Carne",
+        "imagen": "../../public/static/image/carne.jpg",
+        "precio": 75,
+        "puntos": 7.5
+    },
+    {
+        "id": 3,
+        "nombre": "Chorizo",
+        "imagen": "../../public/static/image/chorizo.jpg",
+        "precio": 40,
+        "puntos": 0
+    },
+    {
+        "id": 4,
+        "nombre": "Coca Cola",
+        "imagen": "../../public/static/image/coca-cola.jpg",
+        "precio": 15,
+        "puntos": 1.5
+    },
+    {
+        "id": 5,
+        "nombre": "Helado Tentacion",
+        "imagen": "../../public/static/image/helado-tentacion.jpg",
+        "precio": 30,
+        "puntos": 3
+    },
+    {
+        "id": 6,
+        "nombre": "Huevos",
+        "imagen": "../../public/static/image/huevos.jpg",
+        "precio": 50,
+        "puntos": 5
+    },
+    {
+        "id": 7,
+        "nombre": "Yogurt Griego",
+        "imagen": "../../public/static/image/yogurt-griego.jpg",
+        "precio": 8,
+        "puntos": 0.8
+    },
+    {
+        "id": 8,
+        "nombre": "Chocolate Cofler",
+        "imagen": "../../public/static/image/chocolate-cofler.jpg",
+        "precio": 100,
+        "puntos": 10
+    }
+]

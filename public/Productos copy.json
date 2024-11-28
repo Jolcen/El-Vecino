@@ -1,0 +1,66 @@
+[
+    {
+        "0": 1,
+        "1": "Leche Pil",
+        "2": "Leche normal de la empresa Pil",
+        "3": "Bebida",
+        "4": 10,
+        "5": 2
+    },
+    {
+        "0": 2,
+        "1": "Carne",
+        "2": "Carne de Vaca 1kg",
+        "3": "Consumo",
+        "4": 75,
+        "5": 7.5
+    },
+    {
+        "0": 3,
+        "1": "Chorizo",
+        "2": "Producto cárnico típicamente español",
+        "3": "Consumo",
+        "4": 40,
+        "5": 4
+    },
+    {
+        "0": 4,
+        "1": "Coca Cola",
+        "2": "Bebida cristales de azúcar, caramelo, cafeína, ácido fosfórico, agua carbonatada, extracto de nuez de cola, extracto de frutas, mezclas, vainilla y glicerol.",
+        "3": "Bebida",
+        "4": 15,
+        "5": 1.5
+    },
+    {
+        "0": 5,
+        "1": "Helado Tentacion",
+        "2": "Helado de crema con cobertura de chocolate",
+        "3": "Bebida",
+        "4": 30,
+        "5": 3
+    },
+    {
+        "0": 6,
+        "1": "Huevos",
+        "2": "huevo de la gallina, especialmente destinado a la alimentación humana",
+        "3": "Consumo",
+        "4": 50,
+        "5": 5
+    },
+    {
+        "0": 7,
+        "1": "Yogurt Griego",
+        "2": "Producto lácteo fermentado que se obtiene al filtrar el yogur regular para eliminar el suero",
+        "3": "Consumo",
+        "4": 8,
+        "5": 0.8
+    },
+    {
+        "0": 8,
+        "1": "Chocolate Cofler",
+        "2": "Chocolate con leche, ",
+        "3": "Consumo",
+        "4": 100,
+        "5": 10
+    }
+]

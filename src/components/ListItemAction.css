@@ -1,17 +1,25 @@
-.listitemaction{
+.list-item-action{
     display: flex;
     gap: 10px;
 }
 
-.listitemaction a:nth-child(2){
+.list-item-action a{
+    text-decoration: none;
+}
+
+.list-item-action a:nth-child(2){
     color: red;
 }
 
-.listitemaction a:first-child{
+.list-item-action a:first-child{
     color: blue;
 }
 @media screen and(max-width: 800px) {
-    .listitemaction{
+    .list-item-action{
         flex-direction: column;
     }
+}
+
+.list-item-action a:hover{
+    text-decoration: underline;
 }

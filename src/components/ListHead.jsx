@@ -1,16 +1,16 @@
-import './List.css'
+import './List.css';
 
-const ListHead = () => {
+const ListHead = ({ heads }) => {
   return (
-    <div className='listhead'>
-      <div className="col-id">ID</div>
-      <div className="col-nombre">Nombre</div>
-      <div className="col-correo">Correo</div>
-      <div className="col-usuario">Usuario</div>
-      <div className="col-rol">Rol</div>
+    <div className="listhead">
+      {heads.map((head, index) => (
+        <div key={index} className={`col-${index}`}>
+          {head}
+        </div>
+      ))}
       <div className="col-acciones">Acciones</div>
     </div>
-  )
-}
+  );
+};
 
-export default ListHead
+export default ListHead;

@@ -4,6 +4,7 @@ import {  BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Dashboard from './routes/Dashboard'
 import Login from './routes/Login'
+import DashProductSell from './routes/dash/DashProductSell';
 
 function App() {
 

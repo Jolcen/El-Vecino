@@ -1,0 +1,20 @@
+.select-container{
+    display: flex;
+    margin: 0 1.4rem;
+    gap: 4.5rem;
+    align-items: center;
+}
+
+.select-title{
+    font-size: 1.2rem;
+    padding-left: .6rem;
+    width: 8rem;
+}
+
+.select{
+    display: flex;
+    padding: 0;
+    height: 2rem;
+    width: 15rem;
+    font-size: 1.2rem;
+}

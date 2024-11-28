@@ -9,6 +9,7 @@
     background-color: var(--secondary-light-color);
     flex-grow: 1;
     overflow-y: scroll;
+    min-width: 20rem;
 }
 
 /*scroll*/

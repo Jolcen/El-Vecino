@@ -1,18 +1,21 @@
-import './List.css'
-import ListItemAction from './ListItemAction'
+import './List.css';
+import ListItemAction from './ListItemAction';
 
-const ListItem = ({id, nombre, correo, usuario, rol, acciones}) => {
+const ListItem = ({ data }) => {
   return (
-    <div className='listitem'>
-      <div className="col-id">{id}</div>
-      <div className="col-nombre">{nombre}</div>
-      <div className="col-correo">{correo}</div>
-      <div className="col-usuario">{usuario}</div>
-      <div className="col-rol">{rol}</div>
-      <div className="col-acciones"><ListItemAction/></div>
-      
-    </div>
-  )
-}
+    <div className="listitem">
+      {/* Iteramos sobre las claves y valores del objeto 'data' */}
+      {Object.keys(data).map((key, index) => (
+        <div key={index} className={`col-${key}`}>
+          {data[key]}
+        </div>
+      ))}
 
-export default ListItem
+      <div className="col-acciones">
+        <ListItemAction className='list-item-action'/>
+      </div>
+    </div>
+  );
+};
+
+export default ListItem;

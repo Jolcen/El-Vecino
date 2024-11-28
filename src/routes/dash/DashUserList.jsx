@@ -1,27 +1,21 @@
 import DashTitle from "../../components/DashTitle"
 import ListHead from "../../components/ListHead"
 import ListItem from "../../components/ListItem"
+import { useState } from "react"
+
+import usuarios from "../../../public/Usuarios.json"
 
 const DashUserList = () => {
+  
+  const [usuario, setUsuarios] = useState(usuarios); 
+
   return (
-    <div className='userlist'>
+    <div className=''>
       <DashTitle titlename='Lista usuarios'/>
-      <ListHead/>
-      <ListItem id={'1'} 
-                nombre={'Daniela Alejandra Miranda Ramirez'} 
-                correo={'danmirandar26@gmail.com'}
-                usuario={'Admin'}
-                rol={'Administrador'}
-                acciones={''}
-      />
-      <ListItem id={'1'} nombre={'Daniela Alejandra Miranda Ramirez'} correo={'danmirandar26@gmail.com'} usuario={'Admin'} rol={'Administrador'} acciones={''}/>
-      <ListItem id={'1'} nombre={'Daniela Alejandra Miranda Ramirez'} correo={'danmirandar26@gmail.com'} usuario={'Admin'} rol={'Administrador'} acciones={''}/>
-      <ListItem id={'1'} nombre={'Daniela Alejandra Miranda Ramirez'} correo={'danmirandar26@gmail.com'} usuario={'Admin'} rol={'Administrador'} acciones={''}/>
-      <ListItem id={'1'} nombre={'Daniela Alejandra Miranda Ramirez'} correo={'danmirandar26@gmail.com'} usuario={'Admin'} rol={'Administrador'} acciones={''}/>
-      <ListItem id={'1'} nombre={'Daniela Alejandra Miranda Ramirez'} correo={'danmirandar26@gmail.com'} usuario={'Admin'} rol={'Administrador'} acciones={''}/>
-      <ListItem id={'1'} nombre={'Daniela Alejandra Miranda Ramirez'} correo={'danmirandar26@gmail.com'} usuario={'Admin'} rol={'Administrador'} acciones={''}/>
-      
-      
+      <ListHead heads={['ID','Nombre','Correo','Usuario','Rol']}/>
+      {usuarios.map((usuario, index) => (
+            <ListItem key={index} data={usuario} />
+        ))}
     </div>
   )
 }

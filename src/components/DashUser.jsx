@@ -7,7 +7,7 @@ const DashUser = () => {
             <img src="/public/static/image/images.jpg" alt="" />
         </div>
         <div className="user-data">
-            <h3>Usuario nombre</h3>
+            <h3>Jose</h3>
             <h4>Admin</h4>
         </div>
     </div>

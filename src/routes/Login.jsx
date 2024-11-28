@@ -21,7 +21,7 @@ const login = () => {
             <div className="bg"></div>
             <div className='login'>
                 <Title title='Iniciar Sesion'/>
-                <PerfilPhoto srcimg='public/static/image/images.jpg'/>
+                <PerfilPhoto srcimg='public/static/image/user.jpg'/>
                 <InputAccess icon='person' input_type='name' placeholder='Usuario'/>
                 <InputAccess icon='lock' input_type='password' placeholder='Contrasena'/>
                 <ForgotPassword/>

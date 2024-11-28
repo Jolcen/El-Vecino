@@ -1,12 +1,21 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Routes, Route, NavLink } from 'react-router-dom';
 import './Dashboard.css';
 
 import DashUser from '../components/DashUser';
+
 import DashSection from '../components/DashSection';
 import DashItem from '../components/DashItem';
+
 import DashUserRegister from './dash/DashUserRegister';
 import DashUserList from './dash/DashUserList';
+import DashClientRegister from './dash/DashClientRegister';
+import DashClientList from './dash/DashClientList';
+import DashSupplierRegister from './dash/DashSupplierRegister';
+import DashSupplierList from './dash/DashSupplierList';
+import DashProductSell from './dash/DashProductSell';
+import DashProductList from './dash/DashProductList';
+import DashProductRegister from './dash/DashProductRegister';
 
 const Dashboard = () => {
   // Estado para manejar los menús desplegables
@@ -60,10 +69,10 @@ const Dashboard = () => {
           />
           {openSections['clientes'] && (
             <div className="dash-items">
-              <NavLink to="" className="nav-link">
+              <NavLink to="client-register" className="nav-link">
                 <DashItem icon="Circle" item_name="Registro cliente" />
               </NavLink>
-              <NavLink to="" className="nav-link">
+              <NavLink to="client-list" className="nav-link">
                 <DashItem icon="Circle" item_name="Lista de clientes" />
               </NavLink>
             </div>
@@ -79,8 +88,12 @@ const Dashboard = () => {
           />
           {openSections['proveedores'] && (
             <div className="dash-items">
-              <DashItem icon="Circle" item_name="Registro proveedor" />
-              <DashItem icon="Circle" item_name="Lista de proveedores" />
+              <NavLink to="supplier-register" className="nav-link">
+                <DashItem icon="Circle" item_name="Registro proveedor" />
+              </NavLink>
+              <NavLink to="supplier-list" className="nav-link">
+                <DashItem icon="Circle" item_name="Lista de proveedores" />
+              </NavLink>
             </div>
           )}
         </div>
@@ -94,33 +107,39 @@ const Dashboard = () => {
           />
           {openSections['productos'] && (
             <div className="dash-items">
-              <DashItem icon="Circle" item_name="Registro productos" />
-              <DashItem icon="Circle" item_name="Lista de productos" />
-            </div>
-          )}
-        </div>
-        {/*                          Menú Factura                          */}
-        <div>
-          <DashSection
-            icon="receipt_long"
-            section_name="Factura"
-            funtion={() => toggleSection('factura')}
-            iconState={"chevron_left"}
-          />
-          {openSections['factura'] && (
-            <div className="dash-items">
-              <DashItem icon="Circle" item_name="Historial factura" />
+              <NavLink to="product-register" className="nav-link">
+                <DashItem icon="Circle" item_name="Registro productos" />
+              </NavLink>
+              <NavLink to="product-list" className="nav-link">
+                <DashItem icon="Circle" item_name="Lista de productos" />
+              </NavLink>
+              <NavLink to="product-sell" className="nav-link">
+                <DashItem icon="Circle" item_name="Venta de productos" />
+              </NavLink>
             </div>
           )}
         </div>
       </div>
+      {/*                        contenido                */}
       <div className="content">
         <Routes>
           <Route path="user-register" element={<DashUserRegister />} />
           <Route path="user-list" element={<DashUserList />} />
+
+          <Route path="client-register" element={<DashClientRegister />} />
+          <Route path="client-list" element={<DashClientList/>} />
+
+          <Route path="supplier-register" element={<DashSupplierRegister />} />
+          <Route path="supplier-list" element={<DashSupplierList />} />
+
+          <Route path="product-register" element={<DashProductRegister />} />
+          <Route path="product-list" element={<DashProductList />} />
+          <Route path="product-sell" element={<DashProductSell />} />
+
           <Route path="*" element={<h2 className="dashtitle">Selecciona una opción del menú</h2>} />
         </Routes>
       </div>
+      
     </div>
   );
 };

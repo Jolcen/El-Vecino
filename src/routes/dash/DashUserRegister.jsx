@@ -1,5 +1,6 @@
 import Button from "../../components/Button"
 import DashInput from "../../components/DashInput"
+import DashSelect from "../../components/DashSelect"
 import DashTitle from "../../components/DashTitle"
 
 const DashUserRegister = () => {
@@ -12,6 +13,7 @@ const DashUserRegister = () => {
       <DashInput input_name='Contrasena' input_type='text'/>
       <DashInput input_name='Repite la contrasena' input_type='text'/>
       <DashInput input_name='Tipo de Usuario' input_type='text'/>
+      <DashSelect selectTitle='Rol' options={['Administrador','Vendedor']}/>
       <Button namebutton='Crear Usuario'/>
     </>
   )
